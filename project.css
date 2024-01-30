@@ -1,0 +1,126 @@
+body {
+  overflow: hidden;
+}
+.project-content h3 {
+  margin-left: 13rem;
+  margin-top: -5rem;
+}
+.img-slider {
+  position: relative;
+  width: 550px;
+  height: 500px;
+  margin: 10px;
+  background-color: #1d212b;
+}
+.img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+  margin-top: 2rem;
+}
+.img-slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: clip-path 3s;
+}
+.img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 2rem;
+
+  box-shadow: 0 13px 16px -8px orangered;
+}
+.img-slider .slide .info {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+.img-slider .slide .info h2 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-top: 2.1rem;
+  margin-bottom: 2rem;
+}
+.img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-slider .navigation .btnp {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  cursor: pointer;
+  margin-top: -3rem;
+  border-radius: 50%;
+}
+.img-slider .navigation .btnp.active {
+  box-shadow: 0 0 2px orangered;
+  background: orangered;
+}
+
+@media only screen and (max-width: 768px) {
+    .home .project-content h3 {
+      align-items: flex-end;
+      margin-left: 0%;
+      padding-left: 1rem;
+      position: absolute;
+      margin-top: 1.5rem;
+    }
+  
+    .img-slider {
+      width: 100%;
+      max-height: 70vh;
+      overflow: hidden;
+    }
+  
+    .img-slider .slide img {
+      box-shadow: 0 5px 8px -4px orangered;
+      width: 100%;
+      height: auto;
+    }
+  
+    .img-slider .slide {
+      width: 110%; /* Adjust the width as needed */
+      margin-top: 5rem;
+      margin-left: -1rem;
+    }
+  
+    .img-slider .slide .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .img-slider .slide .info h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: -0.5rem;
+      margin-bottom: -5px;
+    }
+  
+    .img-slider .slide .info p {
+      overflow: hidden;
+      font-size: smaller;
+      margin-top: 10px;
+    }
+  
+    .img-slider .navigation {
+      margin-top: -5rem;
+      position: absolute;
+    }
+  }
+  

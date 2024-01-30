@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="fevicon.png" />
+    <script
+      src="https://kit.fontawesome.com/9ddf44991d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>It's Me</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coda&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Coda", system-ui;
+      }
+      .bar-icon {
+        display: none;
+        position: absolute;
+      }
+      #click {
+        display: none;
+      }
+      @media only screen and (max-width: 300px) and (max-height: 500px) {
+        .portfolio-word {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 500px) and (max-height: 768px) {
+        .bar-icon {
+          z-index: 1;
+          display: block;
+          cursor: pointer;
+        }
+        .bar-icon i {
+          margin-left: 15rem;
+          color: #fff;
+          font-size: 25px;
+        }
+
+        .navbar {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 70px;
+          left: -100%;
+          font-size: 22px;
+          line-height: 2rem;
+          align-items: flex-start;
+          width: 100%;
+          background: #1f242d;
+          overflow: hidden;
+          transition: all 300ms ease-in-out;
+        }
+        #click:checked ~ .navbar {
+          left: 0%;
+        }
+        .navbar a {
+          margin-bottom: 12px;
+          font-size: 22px;
+        }
+
+        .home {
+          padding: 20px;
+          margin-top: 3rem;
+        }
+        .home-img {
+          display: none;
+        }
+        .portfolio-word {
+          margin-right: 22rem;
+        }
+        .navbar.active {
+          height: 450px;
+        }
+        .navbar :nth-child(3) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo" style="font-family: 'Satisfy', cursive"
+        >Krushnkumar's</a
+      >
+      <p
+        class="portfolio-word"
+        style="
+          font-family: 'Cookie', cursive;
+          letter-spacing: 1px;
+          margin-left: -30rem;
+          margin-top: 3rem;
+        "
+      >
+        PortFolio
+      </p>
+      <input type="checkbox" id="click" />
+      <label for="click" class="bar-icon"
+        ><i class="fa-solid fa-bars-staggered"></i
+      ></label>
+
+      <nav class="navbar" style="font-family: 'Oleo Script', system-ui">
+        <a href="index" style="--i: 1" class="active">Home</a>
+        <a href="skills.html" style="--i: 2">Skills</a>
+        <a href="experience.html" style="--i: 3">Experience</a>
+        <a href="project.html" style="--i: 4">Project</a>
+        <a href="about.html" style="--i: 4">About</a>
+        <a href="contact.html" style="--i: 5">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home section  -->
+
+    <section class="home">
+      <div class="home-content project-content">
+        <h3 style="font-family: 'Charm', cursive">Projects</h3>
+
+        <div class="img-slider">
+          <div class="slide active">
+            <img src="project img2.avif" alt="" />
+            <div class="info">
+              <h2>Chat Application and Website</h2>
+              <p>
+                "Introducing a sleek slider feature to our chat application and
+                website! This dynamic element adds a touch of visual flair,
+                allowing users to effortlessly explore featured content and
+                updates. Enhance your browsing experience with this interactive
+                addition, seamlessly integrated using HTML, CSS, and
+                JavaScript."
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="project img2.avif" alt="" />
+            <div class="info">
+              <h2>PortFolio Website</h2>
+              <p>
+                "Explore my portfolio website, a blend of HTML, CSS, and
+                JavaScript craftsmanship. With dynamic animations, it brings my
+                projects to life, creating an immersive journey through my work.
+                Dive into a seamless web experience that reflects both style and
+                substance.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="project img2.avif" alt="" />
+            <div class="info">
+              <h2 style="margin-top: -rem">Video Conferencing</h2>
+              <p>
+                "Experience seamless video conferencing on our platform! I've
+                crafted a user-friendly website using HTML, CSS, and JavaScript,
+                backed by a robust database. Connect with ease, enjoy
+                crystal-clear video calls, and enhance your virtual meetings.
+                Elevate your online communication with our intuitive and stylish
+                video conferencing solution."
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="project img2.avif" alt="" />
+            <div class="info">
+              <h2>E-Commerce Website</h2>
+              <p>
+                "Revolutionize your online shopping experience with our
+                E-Commerce website! Crafted with HTML, CSS, and JavaScript, it
+                seamlessly integrates with a robust database for a dynamic
+                shopping journey. But that's not all – we've also implemented
+                the power of React.js to elevate user interactivity and
+                responsiveness.
+              </p>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="btnp active"></div>
+            <div class="btnp"></div>
+            <div class="btnp"></div>
+            <div class="btnp"></div>
+          </div>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="ME1-removebg.png" alt="" />
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var slides = document.querySelectorAll(".slide");
+      var btns = document.querySelectorAll(".btnp");
+      let currentSlide = 1;
+
+      var manualNav = function (manual) {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+
+          btns.forEach((btnp) => {
+            btnp.classList.remove("active");
+          });
+        });
+
+        slides[manual].classList.add("active");
+        btns[manual].classList.add("active");
+      };
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+      var repeat = function (activeClass) {
+        let active = document.getElementsByClassName("active");
+        let i = 1;
+
+        var repeater = () => {
+          setTimeout(function () {
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove("active");
+            });
+
+            slides[i].classList.add("active");
+            btns[i].classList.add("active");
+            i++;
+
+            if (slides.length == i) {
+              i = 0;
+            }
+            if (i >= slides.length) {
+              return;
+            }
+            repeater();
+          }, 6000);
+        };
+
+        repeater();
+      };
+
+      repeat();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+form {
+  position: relative;
+  width: 370px;
+  height: 370px;
+  box-shadow: 0 0 10px orangered;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: -1rem;
+}
+.col22 {
+  display: flex;
+  height: 100%;
+}
+form input {
+  width: 300px;
+  height: 45px;
+  background: transparent;
+  padding: 10px;
+  margin: 5px 30px;
+  border-radius: 10px;
+  border: 0px;
+  border-bottom: 4px solid orangered;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+}
+form h2 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-bottom: 4px solid orangered;
+  margin: 10px 20%;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+form button {
+  width: 100px;
+  color: #fff;
+  background: transparent;
+  opacity: 0.7;
+  padding: 5px;
+  border: 0px;
+  border-radius: 10px;
+  border-bottom: 4px solid orangered;
+  margin-left: 35%;
+  margin-top: 1rem;
+}
+.contact-icon {
+  margin-top: 40%;
+  margin-left: 1rem;
+}
+.contact-icon .call i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: orangered;
+}
+@media only screen and (max-width: 600px) {
+  .col22 {
+    margin: 0;
+  }
+
+  #res {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    
+  }
+  .contact-icon {
+    display: flex;
+    margin-left: -16rem;
+    margin-top: 25rem;
+    flex-direction: column;
+  }
+  form input{
+    width: 80%;
+  }
+  form h2{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .col22 {
+    padding: 10px;
+  }
+
+  .contact-icon {
+    flex-direction: column;
+  }
+}

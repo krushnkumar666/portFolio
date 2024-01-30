@@ -1,0 +1,117 @@
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  color: #fff;
+  font-size: 16px;
+}
+.skill-content {
+  margin-top: -10px;
+}
+.skill-content h3 {
+  font-size: 22px;
+  margin-left: 18rem;
+  margin-top: -5rem;
+}
+.progress-bar {
+  background: #959595;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+}
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+.progress-bar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #222;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid orangered;
+}
+.progress-bar .html {
+  background: orangered;
+  animation: html 3s linear forwards;
+}
+.progress-bar .css {
+  background: orangered;
+  animation: css 3s linear forwards;
+}
+.progress-bar .javascript {
+  background: orangered;
+  animation: javascript 3s linear forwards;
+}
+.progress-bar .reactjs {
+  background: orangered;
+  animation: reactjs 3s linear forwards;
+}
+.progress-bar .nodejs {
+  background: orangered;
+  animation: nodejs 3s linear forwards;
+}
+.progress-bar .sql {
+  background: orangered;
+  animation: sql 3s linear forwards;
+}
+.progress-bar .python {
+  background: orangered;
+  animation: python 3s linear forwards;
+}
+
+/* Animation section */
+
+@keyframes html {
+  100% {
+    width: 95%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 90%;
+  }
+}
+@keyframes javascript {
+  100% {
+    width: 85%;
+  }
+}
+@keyframes reactjs {
+  100% {
+    width: 75%;
+  }
+}
+@keyframes nodejs {
+  100% {
+    width: 60%;
+  }
+}
+@keyframes sql {
+  100% {
+    width: 70%;
+  }
+}
+@keyframes python {
+  100% {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-content h3 {
+    margin-left: 12rem;
+  }
+  .progress-bar {
+    width: 90%;
+    height: 100%;
+  }
+}
